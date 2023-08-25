@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+body{
+    width: 100%;
+    max-height: 100%;
+    min-height: 100vh;
+    background: rgb(12,96,219);
+    background: linear-gradient(41deg, rgba(12,96,219,1) 32%, rgba(102,22,221,1) 60%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    
+
+
+.cards{       
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;    
+    z-index: 2;
+    padding: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: white;
+    width: 320px;
+    padding: 2rem;
+    margin: 1rem;    
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background-color: #f8052def;
+}
+
+.card:hover .card-header > h2{
+    color: #0C60DB;
+    transform: scale(1.1);
+    letter-spacing: 2;
+}
+.card:hover .card-detail > p{
+    color: white;
+}
+.card:hover .card-price > p{
+    color: white;
+}
+
+.card-btn{
+    background-color: #0C60DB;
+    border: none;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;    
+}
+
+.card:hover .card-button .card-btn{
+    background-color: white;
+    color: #f8052def;
+}
+.card-header span{
+    color: #0C60DB;
+    display: block;
+    font-size: 3rem;
+    margin: 0 auto;       
+}
+
+.card-header{
+    margin: 1rem;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.card-detail{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;    
+}
+
+.card-detail>p{
+    padding: 0.6rem 1.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.373);    
+}
+
+.fa-check{
+    color: rgb(3, 195, 3);
+}
+
+.fa-xmark{
+    color: red;
+}
+
+.card-detail > p:hover{
+    background-color: #780216;
+}
+
+.card-button button{
+    font-size: 1.8rem;
+    transition: all ease-in 0.2s;
+}
+
+.card-price{
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem;
+    font-size: 3rem;    
+}
+
+.card-price>p{
+    font-weight: 800;
+}
+
+.card-price>p>sup,
+.card-price>p>sub{
+    font-size: 1rem;
+}
